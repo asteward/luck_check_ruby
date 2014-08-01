@@ -12,6 +12,7 @@ describe 'luck_reader' do
   
   it 'correctly reads numbers with an odd number of digits' do
     expect(luck_reader("977849967")).to eq(true)
+    expect(luck_reader("32576911572")).to eq(false)
   end
 end
   

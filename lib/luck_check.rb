@@ -1,10 +1,3 @@
-def luck_reader(number)
-  half_length = number.length / 2
-  front_string = number[0..(half_length - 1)].split("")
-  back_string = number[(-half_length)..-1].split("")
-  front_string = front_string.map{|number| number.to_i}
-  back_string = back_string.map{|number| number.to_i}
-  front_sum = front_string.reduce(:+)
-  back_sum = back_string.reduce(:+)
-  front_sum == back_sum
+def luck_reader(num)
+  ((num[0..((num.length / 2) - 1)].split("")).map {|int| int.to_i}).reduce(:+) == ((num[(-(num.length / 2))..(-1)].split("")).map {|int| int.to_i}).reduce(:+)
 end
