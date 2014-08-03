@@ -11,6 +11,7 @@ their halves are respectively summed together (1 + 2 + 3 = 6) and (4 + 1 + 1 = 6
 In this case, because the sum of each half equals the other, this ticket would be considered lucky.
 If their is an odd number of digits, the center digit is removed, and the remaining halves are summed and
 compared as previously described.
+Non-digit characters are removed from ticket number input and checked as normal.
 ***
 ## Setup
 Clone this repository or download the .zip and open up the index.html file in the browser.

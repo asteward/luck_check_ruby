@@ -14,5 +14,9 @@ describe 'luck_reader' do
     expect(luck_reader("977849967")).to eq(true)
     expect(luck_reader("32576911572")).to eq(false)
   end
+  
+  it 'removes non-digit characters and returns a correct luck check' do
+    expect(luck_reader("976e6e9856")).to eq(true)
+  end
 end
   
